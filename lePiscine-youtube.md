@@ -102,6 +102,18 @@
 
 
 ## C01-V01 | 01:53 | C - VII Pointeurs - 1 Introduction
+Ponteiro: importante tipo de variável, que possibilita a criação de memória.
+**Memória**. Ao se iniciar um proccesso, qualquer um, virtualmente falando, ele tem acesso ao conjunto da memória.
+Em um sistema 32 bits ele tem acesso a 4 gigas de memória, mesmo se você não tem isso no computador. E o de 64 bits é um pouco mais.
+A memória é dividida em duas partes. Falamos várias vezes, você já dever ter ouvido falar do **stack**, que é o topo da memória, o topo dos endereços do stack, são decrescentes, do maior para o menor. E temos a **heap**, que vocês verão depois. É a parte de baixo dos endereços, e que é crescente. Eu disse que a memória é virtual, isso significa que antes dela, ela será mapeada em algo físico, nas tiras da RAM, seu hard drive.
+Eu aconselho a olhar o que é **swap**. Pelo que eu acabei de dizer, você tem um arquivo BiT de 4 gigas de RAM. E o seu computador tem só 2 de RAM. E em certo momento, há uma coisa que vai mapear essas 4 gigas virtuais para o físico.
+O problema é que se você tentar colocar 4 gigas físicos, sem ter o espaço no seu hard drive, na sua memória, o seu programa vai parar. É o papel do sistema gerar isso. Outro ponto importante é que dois processos que vão iniciar na memória virtual, terão o mesmo endereço.
+Portanto não se surpreenda se os dois programas iniciados tiverem o mesmo endereço, é normal. É porque, virtualmente falando, é o mesmo endereço, mas fisicamente falando, qualquer coisa na memória será colocada no local certo do seu computador.
+Os ponteiros serão a **ferramenta que permite recuperar o endereço de um variável para poder acessá-la e utilizá-la**.
+Você verá que é super útil. 
+ ```c
+
+ ```
 ## C01-V02 | 05:27 | C - VII Pointeurs - 2 Assignation
 ## C01-V03 | 04:19 | C - VII Pointeurs - 3 Déréférencement
 ## C01-V04 | 05:31 | C - VII Pointeurs - 4 Arithmétique des pointeurs
